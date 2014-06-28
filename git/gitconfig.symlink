@@ -1,11 +1,11 @@
 # Sample gitconfig
 [user]
-    name         = Jose Antonio Leiva Izquierdo
-	email = jleivaizq@tmt.info
+    name         = Daniel Chimeno 
+	email = dchimeno@gmail.com
 #    signingkey   = 9B2489CA
     helper       = osxkeychain
 [github]
-    user         = jleivaizq
+    user         = chimeno
 [core]
     excludesfile = ~/.gitignore
     editor       = vim
