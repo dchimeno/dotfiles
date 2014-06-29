@@ -1,0 +1,7 @@
+# Create a directory with init.py for python
+#
+# 
+#
+mkdir $1
+touch $1/__init__.py
+

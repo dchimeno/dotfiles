@@ -1,0 +1,8 @@
+# Delete *.pyc in current directory 
+#
+#
+#
+#
+find . -name "*.pyc" -exec rm -rf {} \;
+
+
