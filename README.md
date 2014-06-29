@@ -60,8 +60,6 @@ work for you even though you may not have `rbenv` installed, for example. That
 said, I do use this as *my* dotfiles, so there's a good chance I may break
 something if I forget to make a check for a dependency.
 
-## Thanks
-- [Jose Antonio Leiva Izquierdo dotfiles](https://github.com/jleivaizq/dotfiles)
 - [Jose Ignacio Galarza dotfiles](http://github.com/igalarzab/dotfiles)
 - [Zach Holman dotfiles](http://github.com/holman/dotfiles)
 - [Ryan Bates dotfiles](http://github.com/ryanb/dotfiles)
