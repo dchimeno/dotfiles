@@ -1,14 +1,4 @@
-# On mac, if coreutils are installed...
-if (( $+commands[gls] ))
-then
-  alias ls="gls --color=tty"
-fi
 
-# On mac, if coreutils are installed...
-if (( $+commands[gsed] ))
-then
-  alias sed="gsed"
-fi
 
 # ls aliases
 alias l="ls"
