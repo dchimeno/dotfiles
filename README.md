@@ -16,6 +16,7 @@ Your dotfiles are how you personalize your system. These are mine.
 - `git submodule init`
 - `git submodule update`
 - `python bootstrap.py`
+- `chsh -s /bin/zsh` # Change shell in case you're using another one
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
