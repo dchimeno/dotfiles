@@ -141,6 +141,13 @@ set mouse=a
 " Nerdtree 
 " ---------------------------------------------------------------------------
 nnoremap <F1> :NERDTreeToggle<cr>
+"Open NERDTree automatically when vim starts up"
+autocmd vimenter * NERDTree
+
+"Start NERDTree automatically when vim starts up altough no files were specified"
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 
 " ---------------------------------------------------------------------------
 " vim-jedi 
