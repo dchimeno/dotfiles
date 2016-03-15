@@ -1,2 +1,4 @@
-checkoutmanager
-pip-tools
+#global modules
+ipython
+ipdb
+

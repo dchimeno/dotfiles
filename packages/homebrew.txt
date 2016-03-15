@@ -1,7 +1,2 @@
-coreutils
 git
-gnu-sed
-grc
-hub
-spark
 wget

@@ -43,6 +43,26 @@ There's a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `rake install`.
 
+
+## Recommended software
+
+Software that it is not necessary to have but you should.
+
+- [Brew](http://brew.sh/)
+- [Python2](https://www.python.org)
+
+...
+
+
+
+## Recommended packages
+
+Inside the ``packages``directory there are some packages quite usefull,
+that should be installed with the appropriate package manager
+
+
+
+
 ## Bugs
 
 I want this to work for everyone; that means when you clone it down it should
