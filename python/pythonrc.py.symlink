@@ -59,8 +59,6 @@ class TerminalColors(collections.Sequence):
 _colors = TerminalColors()
 
 # Read the existing history if there is one
-if os.path.exists(HISTORY_FILE):
-    readline.read_history_file(HISTORY_FILE)
 
 # Set the history size
 readline.set_history_length(HISTORY_SIZE)
