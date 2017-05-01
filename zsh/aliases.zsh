@@ -19,3 +19,5 @@ alias knife="nocorrect knife"
 #Run ipython inside virtualenv
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 
+#vagrant up & vagrant ssh
+alias vus="vagrant up && vagrant ssh"
