@@ -21,3 +21,7 @@ alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance
 
 #vagrant up & vagrant ssh
 alias vus="vagrant up && vagrant ssh"
+
+#make sure pip not uses glob zsh pattern
+#https://stackoverflow.com/questions/30539798/zsh-no-matches-found-requestssecurity
+alias pip='noglob pip'
