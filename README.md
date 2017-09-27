@@ -52,6 +52,9 @@ Software that it is not necessary to have but you should.
 - [Brew](http://brew.sh/)
 - [Python3](https://www.python.org)
 
+## Fonts
+Install fonts in the /fonts/ folder
+In case of iterm2, set the font on Preferences / Profiles / Fonts (Both Font and NON-ASCII Font)
 
 ## Recommended packages
 
