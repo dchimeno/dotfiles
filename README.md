@@ -50,10 +50,7 @@ There's a few special files in the hierarchy.
 Software that it is not necessary to have but you should.
 
 - [Brew](http://brew.sh/)
-- [Python2](https://www.python.org)
-
-...
-
+- [Python3](https://www.python.org)
 
 
 ## Recommended packages
@@ -61,20 +58,4 @@ Software that it is not necessary to have but you should.
 Inside the ``packages``directory there are some packages quite usefull,
 that should be installed with the appropriate package manager
 
-
-
-
-## Bugs
-
-I want this to work for everyone; that means when you clone it down it should
-work for you even though you may not have `rbenv` installed, for example. That
-said, I do use this as *my* dotfiles, so there's a good chance I may break
-something if I forget to make a check for a dependency.
-
-## Credits
-
-- [Jose Antonio Leiva dotfiles](https://github.com/jleivaizq/dotfiles)
-- [Jose Ignacio Galarza dotfiles](https://github.com/igalarzab/dotfiles)
-- [Zach Holman dotfiles](https://github.com/holman/dotfiles)
-- [Ryan Bates dotfiles](https://github.com/ryanb/dotfiles)
 
