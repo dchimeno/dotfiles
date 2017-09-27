@@ -20,7 +20,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(brew django extract git-extras git-flow osx pip python rbenv vagrant)
+plugins=(brew django extract git-extras git-flow osx pip python vagrant)
 
 # All ZSH files inside dotfiles
 typeset -U config_files
@@ -41,7 +41,6 @@ fi
 # Disable all corrections
 unsetopt correct
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
