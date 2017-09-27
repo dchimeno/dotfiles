@@ -13,8 +13,6 @@ alias reload='. ~/.zshrc'
 # cd into Development folder
 alias d="cd $PROJECTS"
 
-# Fucking auto-complete :D
-alias knife="nocorrect knife"
 
 #Run ipython inside virtualenv
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
@@ -25,3 +23,5 @@ alias vus="vagrant up && vagrant ssh"
 #make sure pip not uses glob zsh pattern
 #https://stackoverflow.com/questions/30539798/zsh-no-matches-found-requestssecurity
 alias pip='noglob pip'
+
+alias brewsize="du -hs /usr/local/Cellar/* | gsort -h"
