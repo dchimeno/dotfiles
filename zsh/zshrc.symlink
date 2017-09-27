@@ -1,5 +1,5 @@
 # Shortcut to this dotfiles
-export DOTFILES=$HOME/Documents/projects/dotfiles
+export DOTFILES=$HOME/.dotfiles
 
 # Path to your oh-my-zsh configuration.
 export ZSH=$DOTFILES/zsh/ohmyzsh.git
