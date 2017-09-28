@@ -37,4 +37,4 @@
 	url = https://github.com/moll/vim-bbye.git
 [submodule "zsh/custom/themes/powerlevel9k"]
 	path = zsh/custom/themes/powerlevel9k
-	url = git@github.com:bhilburn/powerlevel9k.git
+	url = https://github.com/bhilburn/powerlevel9k.git
