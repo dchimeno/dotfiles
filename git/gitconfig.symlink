@@ -2,8 +2,12 @@
 [user]
     name         = Daniel Chimeno 
 	email = dchimeno@gmail.com
-#    signingkey   = 9B2489CA
     helper       = osxkeychain
+
+[includeIf "gitdir:~/Documents/work/"]
+  # Create this file as is not in the repository
+  path = $HOME/.dotfiles/git/gitconfigwork
+
 [github]
     user         = chimeno
 [core]
