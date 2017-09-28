@@ -24,4 +24,15 @@ alias vus="vagrant up && vagrant ssh"
 #https://stackoverflow.com/questions/30539798/zsh-no-matches-found-requestssecurity
 alias pip='noglob pip'
 
+# Homebrew
+alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
 alias brewsize="du -hs /usr/local/Cellar/* | gsort -h"
+
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+
+alias path='echo -e ${PATH//:/\\n}'
+
+alias psg="ps aux | grep "
