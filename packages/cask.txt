@@ -13,3 +13,8 @@ vagrant
 vlc
 superduper
 calibre
+devdocs
+filezilla
+imageoptim
+limechat
+openoffice
