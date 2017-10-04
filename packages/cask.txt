@@ -1,0 +1,15 @@
+android-file-transfer
+atom
+caffeine
+clipy
+iterm2
+mpv
+spectacle
+spotify
+the-unarchiver
+transmission
+virtualbox
+vagrant
+vlc
+superduper
+calibre
