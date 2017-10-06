@@ -193,3 +193,5 @@ let g:syntastic_python_checkers = ['pep8', 'pylint', 'python']
 " ---------------------------------------------------------------------------
 :nnoremap <Leader>q :Bdelete<CR>
 
+" GIT COMMIT more usable "
+autocmd Filetype gitcommit setlocal spell textwidth=72
