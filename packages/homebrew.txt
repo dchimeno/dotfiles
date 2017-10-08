@@ -10,3 +10,4 @@ watchman
 wrk
 thefuck
 optipng
+wakeonlan
