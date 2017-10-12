@@ -11,3 +11,6 @@ wrk
 thefuck
 optipng
 wakeonlan
+speedtest-cli
+iperf
+
