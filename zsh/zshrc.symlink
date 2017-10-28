@@ -24,7 +24,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(brew django extract git-extras git-flow osx pip python vagrant zsh-syntax-highlighting zsh-completions)
+plugins=(brew django extract git-extras git-flow osx pip python vagrant zsh-completions zsh-syntax-highlighting)
 
 # the fuck
 eval "$(thefuck --alias)"
@@ -51,3 +51,4 @@ unsetopt correct
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
