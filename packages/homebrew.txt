@@ -13,4 +13,6 @@ optipng
 wakeonlan
 speedtest-cli
 iperf
+tldr
+
 
