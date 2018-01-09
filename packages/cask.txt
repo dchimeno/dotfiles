@@ -18,3 +18,4 @@ filezilla
 imageoptim
 limechat
 openoffice
+etcher
