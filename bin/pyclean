@@ -1,0 +1,4 @@
+# Delete *.pyc *.pyo and __pycache__ in current directory recursive
+#
+
+find . -name \*.pyc -o -name \*.pyo -o -name __pycache__ -delete
