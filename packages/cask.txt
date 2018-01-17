@@ -18,3 +18,10 @@ filezilla
 imageoptim
 limechat
 openoffice
+etcher
+pgadmin4
+telegram
+oversight
+burn
+devdocs
+tunnelblick

@@ -35,6 +35,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 
 alias path='echo -e ${PATH//:/\\n}'
 
+# PS
+alias psa="ps aux"
 alias psg="ps aux | grep "
+alias psp='ps aux | grep python'
 
 alias wolpackdev="wakeonlan -i 192.168.0.255 70:5a:b6:d9:c9:99"
