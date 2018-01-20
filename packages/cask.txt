@@ -25,3 +25,4 @@ oversight
 burn
 devdocs
 tunnelblick
+macpass
