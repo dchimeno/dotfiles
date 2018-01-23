@@ -1,15 +1,11 @@
-# Sample gitconfig
-[user]
-    name         = Daniel Chimeno 
-	email = dchimeno@gmail.com
-    helper       = osxkeychain
-
 [includeIf "gitdir:~/Documents/work/"]
   # Create this file as is not in the repository
-  path = $HOME/.dotfiles/git/gitconfigwork
+  path = ~/.dotfiles/git/gitconfigwork
 
-[github]
-    user         = chimeno
+[includeIf "gitdir:~/Documents/personal/"]
+  # Create this file as is not in the repository
+  path = ~/.dotfiles/git/gitconfigpersonal
+
 [core]
     excludesfile = ~/.gitignore
     editor       = vim

@@ -14,5 +14,6 @@ wakeonlan
 speedtest-cli
 iperf
 tldr
+git
 
 

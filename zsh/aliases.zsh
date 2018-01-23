@@ -13,10 +13,6 @@ alias reload='. ~/.zshrc'
 # cd into Development folder
 alias d="cd $PROJECTS"
 
-
-#Run ipython inside virtualenv
-alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
-
 #vagrant up & vagrant ssh
 alias vus="vagrant up && vagrant ssh"
 
@@ -25,7 +21,6 @@ alias vus="vagrant up && vagrant ssh"
 alias pip='noglob pip'
 
 # Homebrew
-alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
 alias brewsize="du -hs /usr/local/Cellar/* | gsort -h"
 
 # Empty the Trash on all mounted volumes and the main HDD.
