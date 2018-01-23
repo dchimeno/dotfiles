@@ -1,10 +1,12 @@
+[includeIf "gitdir:~/"]
+  # Create this file as is not in the repository
+  path = ~/.dotfiles/git/gitconfigpersonal
+
 [includeIf "gitdir:~/Documents/work/"]
   # Create this file as is not in the repository
   path = ~/.dotfiles/git/gitconfigwork
 
-[includeIf "gitdir:~/Documents/personal/"]
-  # Create this file as is not in the repository
-  path = ~/.dotfiles/git/gitconfigpersonal
+
 
 [core]
     excludesfile = ~/.gitignore
