@@ -15,5 +15,5 @@ speedtest-cli
 iperf
 tldr  # man with examples
 git
-
+translate-shell
 
