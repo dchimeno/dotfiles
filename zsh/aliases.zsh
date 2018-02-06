@@ -1,17 +1,14 @@
 
 
 # ls aliases
-alias l="ls -alh"
-alias ll="ls -l"
+alias l="ls -l"
+alias ll="ls -alh"
 alias la="ls -A"
 alias lla="ls -lA"
 
 # Generic aliases
 alias grep="grep --color=auto"
 alias reload='. ~/.zshrc'
-
-# cd into Development folder
-alias d="cd $PROJECTS"
 
 #vagrant up & vagrant ssh
 alias vus="vagrant up && vagrant ssh"

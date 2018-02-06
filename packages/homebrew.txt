@@ -13,7 +13,7 @@ optipng
 wakeonlan
 speedtest-cli
 iperf
-tldr
+tldr  # man with examples
 git
 
 

@@ -1,5 +1,4 @@
 android-file-transfer
-atom
 caffeine
 clipy
 iterm2
@@ -19,7 +18,6 @@ imageoptim
 limechat
 openoffice
 etcher
-pgadmin4
 telegram
 oversight
 burn
