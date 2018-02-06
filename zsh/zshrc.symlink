@@ -13,7 +13,7 @@ ZSH_CUSTOM=$DOTFILES/zsh/custom/
 # Set name of the theme to load.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context virtualenv dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context pyenv virtualenv dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
 
