@@ -1,19 +1,18 @@
-git
-wget
 coreutils
-httpie
-jq # cli json parser
 ffmpeg
-nmap
-pyenv
-watchman
-wrk
-thefuck
-optipng
-wakeonlan
-speedtest-cli
-iperf
-tldr  # man with examples
 git
+git
+httpie
+iperf
+jq # cli json parser
+nmap
+optipng
+pyenv
+speedtest-cli
+thefuck
+tldr  # man with examples
 translate-shell
-
+wakeonlan
+watchman
+wget
+wrk
