@@ -32,7 +32,6 @@
 
     credit   = !$HOME/.dotfiles/git/functions/git-credit
     wtf      = !$HOME/.dotfiles/git/functions/git-wtf
-    rank     = !$HOME/.dotfiles/git/functions/git-rank-contributers
     merged   = !$HOME/.dotfiles/git/functions/git-local-merged
     rbpull   = !$HOME/.dotfiles/git/functions/git-reup
 

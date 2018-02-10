@@ -1,17 +1,8 @@
 #!/bin/bash
 #
-# Pretty log showing the changed files.
+# List remote Git branches and the last commit date for each branch. Sort by most recent commit date.
 #
-# Author: @holman
+# Author: https://gist.github.com/jasonrudolph/1810768#gistcomment-1830434
 #
 
-HASH="%C(yellow)%h%Creset"
-RELATIVE_TIME="%Cgreen<%ar>%Creset"
-AUTHOR="%C(blue)[%cn]%Creset"
-REFS="%C(red)%d%Creset"
-SUBJECT="%s"
-
-FORMAT="$HASH $SUBJECT $AUTHOR $RELATIVE_TIME $REFS"
-
-git log --pretty=format:"${FORMAT}" $* --decorate --numstat |
-    less -FXRS
+git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:red)%(objectname:short)%(color:reset);%(color:yellow)%(refname:short)%(color:reset);(%(color:green)%(committerdate:relative)%(color:reset));%(authorname);%(contents:subject)' | column -t -s ';'
