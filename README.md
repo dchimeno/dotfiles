@@ -42,7 +42,7 @@ There's a few special files in the hierarchy.
 - **topic/\*.symlink**: Any files ending in `*.symlink` get symlinked into
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
-  symlinked in when you run `rake install`.
+  symlinked in when you run `python3 bootstrap.py`.
 
 
 ## Recommended software
@@ -58,7 +58,11 @@ In case of iterm2, set the font on Preferences / Profiles / Fonts (Both Font and
 
 ## Recommended packages
 
-Inside the ``packages``directory there are some packages quite usefull,
-that should be installed with the appropriate package manager
+Install brew and then, inside the ``homebrew/<machine>/`` directory run:
+``brew bundle install``
 
 
+## Configure git
+To configure git, you need to create a ``git/gitconfigpersonal`` and or ``git/gitconfigwork`` files
+in order to configure git according to the environment you use.
+More info in the first lines of the ``git/gitconfig.symlink` file.
