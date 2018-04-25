@@ -39,8 +39,6 @@ alias psp='ps aux | grep python'
 
 alias wolpackdev="wakeonlan -i 192.168.0.255 70:5a:b6:d9:c9:99"
 
-#DOCKER
-alias dsall="docker stop $(docker ps -a -q)"
-alias drmall="docker rm $(docker ps -a -q)"
+
 
 
