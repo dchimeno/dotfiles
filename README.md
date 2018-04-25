@@ -1,11 +1,5 @@
 # chimeno does dotfiles
 
-
-
-This repository and this README is based in the original dotfiles promoted by
-[@holman](http://github.com/holman).
-
-
 ## dotfiles
 
 Your dotfiles are how you personalize your system. These are mine.
@@ -25,12 +19,6 @@ Everything is configured and tweaked within `~/.dotfiles`.
 
 The main file you'll want to change right off the bat is `zsh/zshrc.symlink`,
 which sets up a few paths that'll be different on your particular machine.
-
-Everything's built around topic areas. If you're adding a new area to your
-forked dotfiles — say, "Java" — you can simply add a `java` directory and put
-files in there. Anything with an extension of `.zsh` will get automatically
-included into your shell. Anything with an extension of `.symlink` will get
-symlinked without extension into `$HOME` when you run `bootstrap`.
 
 
 ## Components
@@ -68,3 +56,8 @@ Install brew and then, inside the ``homebrew/<machine>/`` directory run:
 To configure git, you need to create a ``git/gitconfigpersonal`` and or ``git/gitconfigwork`` files
 in order to configure git according to the environment you use.
 More info in the first lines of the ``git/gitconfig.symlink` file.
+
+
+## Update
+In order to update submodules, run:
+`git submodule update --recursive --remote`
