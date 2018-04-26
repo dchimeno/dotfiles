@@ -53,3 +53,9 @@ unsetopt correct
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/sbin:$PATH"
+
+# hh history
+export HISTFILE=~/.zsh_history
+export HH_CONFIG=keywords,hicolor,debug
+# bind Ctrl+R to hh instead of the native zsh history, must be after source oh-my-zsh
+bindkey -s "\C-r" "\eqhh --\n"
