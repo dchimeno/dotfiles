@@ -23,7 +23,8 @@ alias brews='brew list -1'
 alias bubo='brew update && brew outdated && brew cask outdated'
 alias bubc='brew upgrade && brew cask upgrade && brew cleanup && brew cask cleanup'
 alias bubu='bubo && bubc'
-
+alias bdumpwork='brew bundle dump --file=$DOTFILES/homebrew/work/Brewfile --force'
+alias bdumpmachost='brew bundle dump --file=$DOTFILES/homebrew/machost/Brewfile --force'
 
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
