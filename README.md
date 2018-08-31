@@ -51,6 +51,9 @@ In case of iterm2, set the font on Preferences / Profiles / Fonts (Both Font and
 Install brew and then, inside the ``homebrew/<machine>/`` directory run:
 ``brew bundle install``
 
+To record all installed packages to a file, use:
+``brew bundle dump --force --file=$DOTFILES/homebrew/[machost,work]/Brewfile``
+
 
 ## Configure git
 To configure git, you need to create a ``git/gitconfigpersonal`` and or ``git/gitconfigwork`` files

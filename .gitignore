@@ -1,5 +1,5 @@
 .DS_Store
-
+.vscode/
 vim/vim.symlink/.netrwhist
 vim/vim.symlink/spell
 
