@@ -1,1 +1,4 @@
-curl ipecho.net/plain; echo
+#!/bin/zsh
+ip=$(curl -s ipecho.net/plain)
+echo $ip | pbcopy
+echo $ip + "copied to clipboard"
