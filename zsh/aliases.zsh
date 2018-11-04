@@ -12,6 +12,7 @@ alias reload='. ~/.zshrc'
 
 #vagrant up & vagrant ssh
 alias vus="vagrant up && vagrant ssh"
+alias vs="vagrant ssh"
 
 #make sure pip not uses glob zsh pattern
 #https://stackoverflow.com/questions/30539798/zsh-no-matches-found-requestssecurity
