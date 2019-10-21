@@ -27,7 +27,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(zsh-completions zsh-syntax-highlighting)
 
 # the fuck
-eval "$(thefuck --alias)"
+eval $(thefuck --alias --enable-experimental-instant-mode)
 
 # All ZSH files inside dotfiles
 typeset -U config_files
