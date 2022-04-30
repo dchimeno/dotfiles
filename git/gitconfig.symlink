@@ -79,3 +79,6 @@
 	default = current
 [diff]
 	tool = vimdiff
+[user]
+	name = Daniel Chimeno
+	email = daniel@chimeno.me
