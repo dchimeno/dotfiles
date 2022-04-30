@@ -17,7 +17,7 @@ def create_symlinks():
     always_overwrite = False
 
     for symlink in symlinks:
-	origin = os.path.join(SELF_PATH, symlink)
+        origin = os.path.join(SELF_PATH, symlink)
 
         filename = '.' + os.path.splitext(os.path.basename(symlink))[0]
         destine = os.path.expanduser(os.path.join('~', filename))
@@ -44,7 +44,7 @@ def create_symlinks():
 def confirm_overwrite(path):
     'Ask the user to overwrite a file'
     while True:
-        answer = raw_input('%s exists, overwrite it? (a/y/n) ' %
+        answer = input('%s exists, overwrite it? (a/y/n) ' %
                            os.path.basename(path))
 
         if answer in ('y', 'n', 'a'):
