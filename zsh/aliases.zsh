@@ -21,8 +21,8 @@ alias pip='noglob pip'
 # Homebrew
 alias brewsize="du -hs /usr/local/Cellar/* | gsort -h"
 alias brews='brew list -1'
-alias bubo='brew update && brew outdated && brew cask outdated'
-alias bubc='brew upgrade && brew cask upgrade && brew cleanup'
+alias bubo='brew update && brew outdated && brew outdated'
+alias bubc='brew upgrade && brew upgrade && brew cleanup'
 alias bubu='bubo && bubc'
 alias bdumpwork='brew bundle dump --file=$DOTFILES/homebrew/work/Brewfile --force'
 alias bdumpmachost='brew bundle dump --file=$DOTFILES/homebrew/machost/Brewfile --force'

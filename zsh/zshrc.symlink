@@ -24,7 +24,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(zsh-completions zsh-syntax-highlighting)
+plugins=(poetry zsh-completions zsh-syntax-highlighting)
 
 # the fuck
 eval $(thefuck --alias --enable-experimental-instant-mode)
