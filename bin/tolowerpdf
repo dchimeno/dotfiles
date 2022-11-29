@@ -1,0 +1,6 @@
+#!/bin/zsh
+# Reduce size of a given pdf
+# tolowerpdf input.pdf output.pdf
+# needs: brew install ghostscript
+
+ps2pdf -dPDFSETTINGS=/ebook $1 $2
