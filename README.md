@@ -7,11 +7,11 @@ Your dotfiles are how you personalize your system. These are mine.
 
 ## Install
 
-- `git clone git://github.com/chimeno/dotfiles ~/.dotfiles`
+- `git clone git://github.com/dchimeno/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `git submodule init`
 - `git submodule update`
-- `python bootstrap.py`
+- `python3 bootstrap.py`
 - `chsh -s /bin/zsh` # Change shell in case you're using another one
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
@@ -49,9 +49,11 @@ In case of iterm2, set the font on Preferences / Profiles / Fonts (Both Font and
 ## Recommended packages
 
 Install brew and then, inside the ``homebrew/<machine>/`` directory run:
+
 ``brew bundle install``
 
 To record all installed packages to a file, use:
+
 ``brew bundle dump --force --file=$DOTFILES/homebrew/[machost,work]/Brewfile``
 
 

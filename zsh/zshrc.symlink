@@ -26,8 +26,6 @@ COMPLETION_WAITING_DOTS="true"
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
 plugins=(poetry zsh-completions zsh-syntax-highlighting)
 
-# the fuck
-eval $(thefuck --alias --enable-experimental-instant-mode)
 
 # All ZSH files inside dotfiles
 typeset -U config_files
