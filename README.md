@@ -62,6 +62,10 @@ To configure git, you need to create a ``git/gitconfigpersonal`` and or ``git/gi
 in order to configure git according to the environment you use.
 More info in the first lines of the ``git/gitconfig.symlink` file.
 
+## Secret
+
+Put secrets in $DOTFILES/.localrc
+
 
 ## Update
 In order to update submodules, run:
