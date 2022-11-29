@@ -10,18 +10,11 @@ alias lla="ls -lA"
 alias grep="grep --color=auto"
 alias reload='. ~/.zshrc'
 
-#vagrant up & vagrant ssh
-alias vus="vagrant up && vagrant ssh"
-alias vs="vagrant ssh"
-
-#make sure pip not uses glob zsh pattern
-#https://stackoverflow.com/questions/30539798/zsh-no-matches-found-requestssecurity
-alias pip='noglob pip'
 
 # Homebrew
 alias brewsize="du -hs /usr/local/Cellar/* | gsort -h"
 alias brews='brew list -1'
-alias bubo='brew update && brew outdated && brew outdated'
+alias bubo='brew update && brew outdated'
 alias bubc='brew upgrade && brew upgrade && brew cleanup'
 alias bubu='bubo && bubc'
 alias bdumpwork='brew bundle dump --file=$DOTFILES/homebrew/work/Brewfile --force'
@@ -39,7 +32,6 @@ alias psa="ps aux"
 alias psg="ps aux | grep "
 alias psp='ps aux | grep python'
 
-alias wolpackdev="wakeonlan -i 192.168.0.255 70:5a:b6:d9:c9:99"
 
 # Docker
 alias dkrstop='docker stop $(docker ps -aq)' # Stop all containers
@@ -50,5 +42,3 @@ alias dkrrmimg='docker rmi $(docker images -q)' # Remove all images
 alias awscode="mfa otp aws | pbcopy"
 
 alias cat="bat"
-
-alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
