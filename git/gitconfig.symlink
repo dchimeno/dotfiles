@@ -1,5 +1,5 @@
 [includeIf "gitdir:~/"]
-  # Create this file as is not in the repository
+  # Create this file as is not in the repository
   path = ~/.dotfiles/git/gitconfigpersonal
 
 [includeIf "gitdir:~/Documents/work/"]
@@ -79,6 +79,3 @@
 	default = current
 [diff]
 	tool = vimdiff
-[user]
-	name = Daniel Chimeno
-	email = daniel@chimeno.me
