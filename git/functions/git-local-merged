@@ -5,4 +5,4 @@
 # Author: @tekkub
 #
 
-git branch --merged | grep -v '^*' | grep -v 'master\|dev'
+git branch --merged | grep -v '^*' | grep -v 'master\|dev\|develop'
