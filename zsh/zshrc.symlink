@@ -13,8 +13,8 @@ ZSH_CUSTOM=$DOTFILES/zsh/custom/
 # Set name of the theme to load.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context pyenv virtualenv dir newline vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history vpn_ip time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( context pyenv virtualenv dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator history  time)
 
 
 # Comment this out to disable bi-weekly auto-update checks
@@ -24,7 +24,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(poetry zsh-completions zsh-syntax-highlighting)
+plugins=(zsh-completions zsh-syntax-highlighting)
 
 
 # All ZSH files inside dotfiles
