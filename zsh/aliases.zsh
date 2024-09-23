@@ -38,9 +38,6 @@ alias dkrstop='docker stop $(docker ps -aq)' # Stop all containers
 alias dkrrm='docker rm $(docker ps -aq)' # Remove all containers
 alias dkrrmimg='docker rmi $(docker images -q)' # Remove all images
 
-
-alias awscode="mfa otp aws | pbcopy"
-
 alias cat="bat"
 
 alias k="kubectl"
