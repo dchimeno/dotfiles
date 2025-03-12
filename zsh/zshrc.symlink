@@ -13,8 +13,8 @@ ZSH_CUSTOM=$DOTFILES/zsh/custom/
 # Set name of the theme to load.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( context pyenv virtualenv dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator history  time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( context virtualenv kubecontext dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( status root_indicator history  time)
 
 
 # Comment this out to disable bi-weekly auto-update checks
@@ -24,7 +24,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(zsh-completions zsh-syntax-highlighting)
+plugins=(zsh-completions zsh-syntax-highlighting kubectl)
 
 
 # All ZSH files inside dotfiles
@@ -62,3 +62,8 @@ export HISTFILE=~/.zsh_history
 export HH_CONFIG=keywords,hicolor,debug
 # bind Ctrl+R to hh instead of the native zsh history, must be after source oh-my-zsh
 bindkey -s "\C-r" "\eqhh --\n"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
