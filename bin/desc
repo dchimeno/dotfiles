@@ -1,0 +1,4 @@
+#!/bin/zsh
+# desc the format of a data file.
+# needs clickhouse local
+clickhouse local -q "desc file('$1') format PrettyCompact"
