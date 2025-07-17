@@ -11,4 +11,3 @@ export HOMEBREW_NO_ANALYTICS=1
 
 
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
