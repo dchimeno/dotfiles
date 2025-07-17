@@ -13,7 +13,7 @@ ZSH_CUSTOM=$DOTFILES/zsh/custom/
 # Set name of the theme to load.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( context virtualenv kubecontext dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( context virtualenv  dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( status root_indicator history  time)
 
 
@@ -24,7 +24,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(zsh-completions zsh-syntax-highlighting kubectl)
+plugins=(zsh-completions zsh-syntax-highlighting )
 
 
 # All ZSH files inside dotfiles
