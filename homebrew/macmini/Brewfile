@@ -26,7 +26,7 @@ brew "ncdu"
 brew "nmap"
 brew "openssl@1.1"
 brew "pkg-config"
-brew "pyenv"
+
 brew "speedtest-cli"
 brew "telnet"
 brew "tig"
