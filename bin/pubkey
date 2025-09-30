@@ -1,6 +1,6 @@
+#!/bin/bash
 # Pipe my public key to my clipboard
 #
 # Author: @holman
-#
 
-more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'
+cat ~/.ssh/id_rsa.pub | pbcopy && echo '=> Public key copied to pasteboard.'

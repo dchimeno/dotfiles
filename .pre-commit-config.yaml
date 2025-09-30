@@ -1,0 +1,54 @@
+# Pre-commit hooks for dotfiles repository
+# Install: pre-commit install
+# Run manually: pre-commit run --all-files
+
+repos:
+  # Shell script linting and formatting
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
+        name: ShellCheck - Shell script linter
+        args: [--severity=warning, --shell=bash]
+        files: \.(sh|bash)$|^bin/
+        exclude: ^vim/vim\.symlink/|\.zsh$|^bin/(catd|curltime|desc|publicip|tolowerpdf)$
+
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.8.0-1
+    hooks:
+      - id: shfmt
+        name: shfmt - Shell script formatter
+        args: [-i, '2', -ci, -w]
+        files: \.(sh|bash|zsh)$|^bin/
+        exclude: ^vim/vim\.symlink/
+
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
+      - id: end-of-file-fixer
+        name: Ensure files end with newline
+        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
+      - id: check-yaml
+        name: Check YAML syntax
+        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
+      - id: check-added-large-files
+        name: Check for large files
+        args: [--maxkb=500]
+      - id: check-case-conflict
+        name: Check for case conflicts
+      - id: check-merge-conflict
+        name: Check for merge conflicts
+      - id: check-executables-have-shebangs
+        name: Check executables have shebangs
+        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
+      - id: mixed-line-ending
+        name: Check for mixed line endings
+        args: [--fix=lf]
+        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
+      - id: detect-private-key
+        name: Detect private keys
+        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/

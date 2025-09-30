@@ -3,7 +3,7 @@
 Casos de uso
 1) Cambia mi ip pública:
    -> Actualizar todos los secgroups con descripción <descrp> a mi nueva ip
-2) 
+2)
 """
 from pprint import pprint
 import json
@@ -38,7 +38,7 @@ def get_sec_groups_by_descr(descr):
 
 
 def update_ip_with_descr_in_secgroups(descr, ip, secgroups):
-    
+
     client = boto3.client('lambda')
     ipaddress = f"{ip}/32"
 
@@ -53,7 +53,7 @@ def update_ip_with_descr_in_secgroups(descr, ip, secgroups):
         FunctionName='CAPupdateSecurityGroups',
         InvocationType='Event',
         LogType='Tail',
-        Payload=json.dumps(body),        
+        Payload=json.dumps(body),
     )
     return response
 
@@ -86,7 +86,7 @@ def parse_arguments():
         nargs='*',
         help="Sec groups to update")
 
-    
+
 
     args = parser.parse_args()
     if not args.secgroups:
@@ -100,7 +100,7 @@ if __name__ == "__main__":
     """
 
     args = parse_arguments()
-        
+
     print(update_ip_with_descr_in_secgroups(descr=args.description,
                                         ip=args.ip,
                                         secgroups=args.secgroups))
