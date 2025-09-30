@@ -5,3 +5,7 @@ vim/vim.symlink/spell
 
 git/gitconfigwork
 git/gitconfigpersonal
+
+
+CLAUDE.md
+.claude/

@@ -71,5 +71,3 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/chimeno/.cache/lm-studio/bin"
