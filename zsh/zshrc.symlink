@@ -57,11 +57,11 @@ export PATH="/usr/local/sbin:$PATH"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 
-# hh history
+# History configuration
 export HISTFILE=~/.zsh_history
-export HH_CONFIG=keywords,hicolor,debug
-# bind Ctrl+R to hh instead of the native zsh history, must be after source oh-my-zsh
-bindkey -s "\C-r" "\eqhh --\n"
+
+# fzf history search (Ctrl+R)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
