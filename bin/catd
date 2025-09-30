@@ -14,4 +14,3 @@ if [[ $1 =~ ^https?://[[:alpha:]-]+.[[:alpha:]]{2,6}(:[[:digit:]]+)?(/.*)?$ ]]; 
 else
     clickhouse local -q "select * from file('$1') limit $limit format $out_format"
 fi
-

@@ -1,3 +1,4 @@
+#!/bin/bash
 # Sets reasonable OS X defaults.
 #
 # Or, in other words, set shit how I like in OS X.
@@ -45,9 +46,8 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
-# Show hidden all files in Open Dialogs of apps 
+# Show hidden all files in Open Dialogs of apps
 defaults write -g AppleShowAllFiles -bool true
-
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -57,8 +57,6 @@ defaults write -g AppleShowAllFiles -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -119,7 +117,6 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-
 ###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
@@ -138,7 +135,6 @@ defaults write org.m0k.transmission BlocklistNew -bool true
 defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
 defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
-
 # Kill affected applications
-for app in Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer; do killall "$app" > /dev/null 2>&1; done
+for app in Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer; do killall "$app" >/dev/null 2>&1; done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
