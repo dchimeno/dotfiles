@@ -33,6 +33,9 @@ There's a few special files in the hierarchy.
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `python3 bootstrap.py`.
+- **Explicit symlinks**: App configs that do not follow the dotfile pattern are
+  mapped in `bootstrap.py`, such as `ghostty/config` to Ghostty's Application
+  Support config path.
 
 
 ## Recommended software
