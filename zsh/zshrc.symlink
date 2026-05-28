@@ -53,8 +53,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:$PATH"
 
 
-# autojump
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+# zoxide
+eval "$(zoxide init zsh)"
 
 
 # History configuration
@@ -70,3 +70,6 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/.cargo/env"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
+
+# sentry
+fpath=("/Users/chimeno/.local/share/zsh/site-functions" $fpath)

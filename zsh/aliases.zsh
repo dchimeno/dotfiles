@@ -41,3 +41,15 @@ alias dkrrmimg='docker rmi $(docker images -q)' # Remove all images
 alias cat="bat"
 
 alias k="kubectl"
+
+
+#other
+
+alias jefri='ssh nasme -t "
+  tmux has-session -t jefri 2>/dev/null \
+  && tmux attach -t jefri \
+  || tmux new-session -s jefri -c /home/daniel/sideprojects/jefri \; \
+     send-keys \"claude --remote-control jefri\" Enter \; \
+     split-window -v -c /home/daniel/sideprojects/jefri \; \
+     send-keys \"uv run python manage.py runserver 0.0.0.0:8000\" Enter
+"'
