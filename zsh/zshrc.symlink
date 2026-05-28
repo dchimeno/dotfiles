@@ -48,16 +48,19 @@ unsetopt correct
 
 # Completion functions installed outside Oh My Zsh must be in fpath before compinit.
 typeset -U fpath
-for completion_dir in "$HOME/.local/share/zsh/site-functions" /opt/homebrew/share/zsh/site-functions /usr/local/share/zsh/site-functions
+completion_dirs=("$HOME/.local/share/zsh/site-functions")
+if command -v brew >/dev/null; then
+  homebrew_prefix="$(brew --prefix 2>/dev/null)"
+  [[ -n "$homebrew_prefix" ]] && completion_dirs=("$homebrew_prefix/share/zsh/site-functions" $completion_dirs)
+fi
+for completion_dir in $completion_dirs
 do
   [[ -d "$completion_dir" ]] && fpath=("$completion_dir" $fpath)
 done
-unset completion_dir
+unset completion_dir completion_dirs homebrew_prefix
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-
-export PATH="/usr/local/sbin:$PATH"
 
 
 # zoxide

@@ -12,7 +12,14 @@ alias reload='. ~/.zshrc'
 
 
 # Homebrew
-alias brewsize="du -hs /usr/local/Cellar/* | gsort -h"
+brewsize() {
+  local cellar
+  local sort_cmd
+  cellar="$(brew --cellar)" || return
+  sort_cmd=sort
+  command -v gsort >/dev/null && sort_cmd=gsort
+  du -hs "$cellar"/* | "$sort_cmd" -h
+}
 alias brews='brew list -1'
 alias bubo='brew update && brew outdated'
 alias bubc='brew upgrade && brew upgrade && brew cleanup'

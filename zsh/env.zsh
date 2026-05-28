@@ -1,4 +1,6 @@
-export PATH="/usr/local/bin:$PATH:$DOTFILES/bin:/usr/local/share/npm/bin:/usr/local/share/python"
+typeset -U path PATH
+
+[[ -d "$DOTFILES/bin" ]] && path=($path "$DOTFILES/bin")
 export EDITOR='vim'
 
 # Colors
