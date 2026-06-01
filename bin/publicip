@@ -1,4 +1,10 @@
 #!/bin/zsh
-ip=$(curl -s ipecho.net/plain)
-echo $ip | pbcopy
-echo $ip + "copied to clipboard"
+ip=$(curl -fsS -m 5 https://ifconfig.me) || ip=$(curl -fsS -m 5 https://api.ipify.org)
+
+if [[ -z "$ip" ]]; then
+  echo "could not fetch public IP" >&2
+  exit 1
+fi
+
+printf '%s' "$ip" | pbcopy
+echo "$ip copied to clipboard"

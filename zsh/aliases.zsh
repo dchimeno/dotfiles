@@ -22,7 +22,7 @@ brewsize() {
 }
 alias brews='brew list -1'
 alias bubo='brew update && brew outdated'
-alias bubc='brew upgrade && brew upgrade && brew cleanup'
+alias bubc='brew upgrade && brew cleanup'
 alias bubu='bubo && bubc'
 alias bdumpwork='brew bundle dump --file=$DOTFILES/homebrew/work/Brewfile --force --no-npm'
 alias bdumpmachost='brew bundle dump --file=$DOTFILES/homebrew/machost/Brewfile --force --no-npm'

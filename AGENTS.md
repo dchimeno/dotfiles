@@ -10,6 +10,17 @@ This repository manages macOS dotfiles and utilities. Files named `*.symlink` ar
 - `homebrew/<machine>/Brewfile`: per-machine Homebrew bundles.
 - `python/`, `vim/`, `ghostty/`, `osx/`, `fonts/`: tool-specific configuration and assets.
 
+### Runtime Loading & Environment
+
+Zsh startup order (driven by `zsh/zshrc.symlink`):
+
+1. `zsh/zshrc.symlink` exports `$DOTFILES`, `$ZSH`, and the `powerlevel9k` theme.
+2. Every `*/*.zsh` file under `$DOTFILES` is sourced (glob, de-duplicated).
+3. `~/.localrc` is sourced if present (machine-specific secrets, not versioned).
+4. Oh My Zsh is loaded from the `zsh/ohmyzsh.git` submodule.
+
+Key environment variables: `$DOTFILES` (`~/.dotfiles`), `$ZSH` (`$DOTFILES/zsh/ohmyzsh.git`), `$PROJECTS` (`~/Documents/projects/`). `bin/` is prepended to `$PATH` by `zsh/env.zsh`.
+
 ## Build, Test, and Development Commands
 
 - `python3 bootstrap.py`: create or refresh symlinks from `*/*.symlink` into `$HOME`.

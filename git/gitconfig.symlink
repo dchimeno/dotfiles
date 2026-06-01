@@ -66,9 +66,7 @@
 [apply]
     whitespace = nowarn
 [merge]
-	tool = vimdiff
-[mergetool]
-    keepBackup = false
+    tool = vimdiff
 [branch]
     autosetuprebase = always
 [help]

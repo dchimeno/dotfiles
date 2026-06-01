@@ -7,7 +7,7 @@ Your dotfiles are how you personalize your system. These are mine.
 
 ## Install
 
-- `git clone git://github.com/dchimeno/dotfiles ~/.dotfiles`
+- `git clone git@github.com:dchimeno/dotfiles.git ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `git submodule init`
 - `git submodule update`
