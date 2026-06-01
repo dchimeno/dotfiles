@@ -1,6 +1,11 @@
 # Pre-commit hooks for dotfiles repository
 # Install: pre-commit install
 # Run manually: pre-commit run --all-files
+#
+# File selection uses identify tags (types/exclude_types) instead of path
+# regexes. Submodule contents (oh-my-zsh, powerlevel10k, vendored plugins,
+# vim-colors-solarized) are ignored by pre-commit automatically, so no manual
+# excludes are needed.
 
 repos:
   # Shell script linting and formatting
@@ -10,8 +15,8 @@ repos:
       - id: shellcheck
         name: ShellCheck - Shell script linter
         args: [--severity=warning, --shell=bash]
-        files: \.(sh|bash)$|^bin/
-        exclude: ^vim/vim\.symlink/|\.zsh$|^bin/(catd|curltime|desc|publicip|tolowerpdf)$
+        types: [shell]
+        exclude_types: [zsh] # shellcheck does not support zsh
 
   - repo: https://github.com/scop/pre-commit-shfmt
     rev: v3.8.0-1
@@ -19,8 +24,7 @@ repos:
       - id: shfmt
         name: shfmt - Shell script formatter
         args: [-i, '2', -ci, -w]
-        files: \.(sh|bash|zsh)$|^bin/
-        exclude: ^vim/vim\.symlink/
+        types: [shell]
 
   # General file checks
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -28,13 +32,10 @@ repos:
     hooks:
       - id: trailing-whitespace
         name: Trim trailing whitespace
-        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
       - id: end-of-file-fixer
         name: Ensure files end with newline
-        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
       - id: check-yaml
         name: Check YAML syntax
-        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
       - id: check-added-large-files
         name: Check for large files
         args: [--maxkb=500]
@@ -44,11 +45,8 @@ repos:
         name: Check for merge conflicts
       - id: check-executables-have-shebangs
         name: Check executables have shebangs
-        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
       - id: mixed-line-ending
         name: Check for mixed line endings
         args: [--fix=lf]
-        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
       - id: detect-private-key
         name: Detect private keys
-        exclude: ^(zsh/ohmyzsh\.git|vim/vim\.symlink)/
