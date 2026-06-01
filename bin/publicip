@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 ip=$(curl -fsS -m 5 https://ifconfig.me) || ip=$(curl -fsS -m 5 https://api.ipify.org)
 
 if [[ -z "$ip" ]]; then
