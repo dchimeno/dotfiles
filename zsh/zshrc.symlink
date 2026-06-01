@@ -11,10 +11,12 @@ export PROJECTS=~/Documents/projects/
 ZSH_CUSTOM=$DOTFILES/zsh/custom/
 
 # Set name of the theme to load.
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( context virtualenv  dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( status root_indicator history  time)
+# NOTE: powerlevel10k reads POWERLEVEL9K_* variables by design (kept for
+# backwards compatibility); there is no POWERLEVEL10K_* prefix.
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context virtualenv dir vcs kubecontext command_execution_time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 
 # Comment this out to disable bi-weekly auto-update checks

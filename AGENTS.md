@@ -14,7 +14,7 @@ This repository manages macOS dotfiles and utilities. Files named `*.symlink` ar
 
 Zsh startup order (driven by `zsh/zshrc.symlink`):
 
-1. `zsh/zshrc.symlink` exports `$DOTFILES`, `$ZSH`, and the `powerlevel9k` theme.
+1. `zsh/zshrc.symlink` exports `$DOTFILES`, `$ZSH`, and the `powerlevel10k` theme.
 2. Every `*/*.zsh` file under `$DOTFILES` is sourced (glob, de-duplicated).
 3. `~/.localrc` is sourced if present (machine-specific secrets, not versioned).
 4. Oh My Zsh is loaded from the `zsh/ohmyzsh.git` submodule.
@@ -37,7 +37,7 @@ Shell formatting is enforced by `shfmt` with 2-space indentation and case indent
 
 ## Testing Guidelines
 
-There is no single application test suite. Treat `pre-commit run --all-files` as the baseline validation before committing. For shell changes, prefer running the changed script directly with representative inputs and fix ShellCheck warnings where the hook applies. If editing vendored `powerlevel9k` content, use its local test documentation and scripts, such as `zsh/custom/themes/powerlevel9k/test-in-docker`, when relevant.
+There is no single application test suite. Treat `pre-commit run --all-files` as the baseline validation before committing. For shell changes, prefer running the changed script directly with representative inputs and fix ShellCheck warnings where the hook applies. Prompt theming is provided by the vendored `powerlevel10k` submodule (`zsh/custom/themes/powerlevel10k`); validate prompt changes by opening a new interactive shell or running `p10k configure`.
 
 ## Commit & Pull Request Guidelines
 
