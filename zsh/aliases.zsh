@@ -1,5 +1,3 @@
-
-
 # ls aliases
 alias l="ls -l"
 alias ll="ls -alh"
@@ -9,7 +7,6 @@ alias lla="ls -lA"
 # Generic aliases
 alias grep="grep --color=auto"
 alias reload='. ~/.zshrc'
-
 
 # Homebrew
 brewsize() {
@@ -40,16 +37,14 @@ alias psa="ps aux"
 alias psg="ps aux | grep "
 alias psp='ps aux | grep python'
 
-
 # Docker
-alias dkrstop='docker stop $(docker ps -aq)' # Stop all containers
-alias dkrrm='docker rm $(docker ps -aq)' # Remove all containers
+alias dkrstop='docker stop $(docker ps -aq)'    # Stop all containers
+alias dkrrm='docker rm $(docker ps -aq)'        # Remove all containers
 alias dkrrmimg='docker rmi $(docker images -q)' # Remove all images
 
 alias cat="bat"
 
 alias k="kubectl"
-
 
 #other
 

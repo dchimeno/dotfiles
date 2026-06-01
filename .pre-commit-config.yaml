@@ -10,7 +10,7 @@
 repos:
   # Shell script linting and formatting
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
+    rev: v0.11.0.1
     hooks:
       - id: shellcheck
         name: ShellCheck - Shell script linter
@@ -19,7 +19,7 @@ repos:
         exclude_types: [zsh] # shellcheck does not support zsh
 
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.8.0-1
+    rev: v3.13.1-1
     hooks:
       - id: shfmt
         name: shfmt - Shell script formatter
@@ -28,7 +28,7 @@ repos:
 
   # General file checks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
         name: Trim trailing whitespace
